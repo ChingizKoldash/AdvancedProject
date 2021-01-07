@@ -45,7 +45,7 @@ def text(id,question):
         # Close communication with the PostgreSQL database
         cur.close()
     except (Exception, psycopg2.DatabaseError) as error:
-       ans1 = ('there is no answer')
+       ans1 = ['there is no answer','1'],
     finally:
         if conn is not None:
             conn.close()
